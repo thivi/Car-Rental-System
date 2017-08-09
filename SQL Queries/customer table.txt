@@ -1,0 +1,12 @@
+create table Customer(
+    CustomerID integer PRIMARY KEY AUTO_INCREMENT,
+    FirstName varchar(255),
+    LastName varchar(255),
+    ContactNo integer,
+    Address varchar(255),
+    DOB date,
+    NIC varchar(255) unique,
+    DateOfRegistration date
+    )
+	
+	

@@ -1,0 +1,16 @@
+create table rental(
+    rentalID integer AUTO_INCREMENT PRIMARY KEY,
+    customerid integer,
+    carid integer,
+    dueDate date,
+    rentedDate date,
+    paymentType varchar(255),
+    staffID integer,
+    totalAmount float,
+    handoverID integer,
+    
+    FOREIGN	KEY fk_rent_cus (customerid) REFERENCES customer(CustomerID),
+    FOREIGN KEY fk_rent_car (carid) REFERENCES car(carid),
+    FOREIGN	KEY	fk_rent_staff (staffID) REFERENCES staff(staffid),
+    FOREIGN KEY fk_rent_hand (handoverID) REFERENCES handover(hID)
+    )

@@ -1,0 +1,12 @@
+create TABLE car (
+    carid integer primary key AUTO_INCREMENT,
+    regno varchar(255)unique,
+    chassisno integer unique,
+    brand varchar(255),
+    dateOfPurchase date,
+    color varchar(255),
+    rentalfee float,
+    carcondition varchar(255),
+    finefee float
+)
+    

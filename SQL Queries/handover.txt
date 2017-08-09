@@ -1,0 +1,7 @@
+create TABLE handover(
+    hID integer PRIMARY KEY AUTO_INCREMENT,
+    rentalID integer UNIQUE,
+    hDate date,
+    hcondition varchar(255),
+    fine float
+    )
